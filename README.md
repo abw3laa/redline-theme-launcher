@@ -1,15 +1,26 @@
 # Redline Theme Launcher
-Android TV launcher prototype for Redline MRT-43 / Android 13.
 
-## Current foundation
-- Kotlin + Jetpack Compose
-- Six built-in themes with persistent selection
-- Landscape TV layout and remote focus states
-- Android TV and standard launcher entry points
-- GitHub Actions builds a debug APK on every push to `main`
+واجهة بديلة لتلفاز Redline MRT-43 بنظام Android TV / Android 13، مطوّرة باستخدام Kotlin وJetpack Compose.
 
-## Download APK
-Open **Actions → Android APK → latest successful run → Artifacts** and download `redline-theme-launcher-debug`.
+## الميزات الحالية
+- ستة ثيمات بألوان وتخطيطات مختلفة، مع حفظ الثيم المختار.
+- اكتشاف التطبيقات التي يعلن النظام أنها قابلة للتشغيل، بما فيها تطبيقات Android TV.
+- فتح التطبيق المحدد مباشرة من اللانشر.
+- صفحة لكل التطبيقات، وشريط للتطبيقات المفضلة، مع إعادة تحميل القائمة.
+- عناصر واجهة قابلة للتحديد باستخدام ريموت التلفاز.
+- نقطة دخول للانشر العادي وAndroid TV.
+- بناء APK تلقائيًا عبر GitHub Actions.
 
-## Limitations
-This is an early prototype. App tiles are currently visual placeholders and do not launch installed packages. Install over USB and open manually for initial testing. Keep the stock launcher enabled until device-specific behavior is verified.
+## تنزيل نسخة الاختبار
+افتح **Actions → Android APK → أحدث تشغيل ناجح → Artifacts**، ثم نزّل `redline-theme-launcher-debug`.
+
+[عرض عمليات البناء](https://github.com/abw3laa/redline-theme-launcher/actions)
+
+## لقطات الشاشة
+ستُضاف لقطات فعلية من جهاز التلفاز بعد تثبيت النسخة وتجربتها. لا تمثل الصور التسويقية بديلًا عن اختبار الواجهة على الجهاز.
+
+## ملاحظات مهمة
+- هذه نسخة أولية تحتاج إلى اختبار على Redline MRT-43.
+- عرض التطبيقات يعتمد على التطبيقات التي يكشفها النظام عبر فئات Launcher وLeanback Launcher؛ بعض التطبيقات قد لا تظهر إذا لم تعلن عن نقطة تشغيل.
+- أبقِ اللانشر الأصلي مفعّلًا إلى أن يكتمل اختبار التشغيل والتنقل بالريموت.
+- لا يغيّر التطبيق إعدادات النظام ولا يحتاج إلى Root.
